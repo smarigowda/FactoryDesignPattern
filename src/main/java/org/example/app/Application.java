@@ -3,10 +3,6 @@ package org.example.app;
 import org.example.enums.ComputerTypes;
 import org.example.factory.ComputerFactory;
 import org.example.model.Computer;
-import org.example.model.MAC;
-import static org.hamcrest.MatcherAssert.assertThat;
-
-import static org.hamcrest.Matchers.is;
 
 public class Application {
     public void run() throws Exception {
