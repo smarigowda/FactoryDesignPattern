@@ -25,4 +25,9 @@ public class PC extends Computer {
     public String getCPU() {
         return cpu;
     }
+
+    @Override
+    public void start() {
+        System.out.println("Starting PC Computer");
+    }
 }

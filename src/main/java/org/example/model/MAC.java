@@ -27,4 +27,9 @@ public class MAC extends Computer {
     public String getCPU() {
         return this.cpu;
     }
+
+    @Override
+    public void start() {
+        System.out.println("Starting MAC Computer");
+    }
 }
