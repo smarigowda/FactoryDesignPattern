@@ -1,0 +1,23 @@
+@startuml
+
+participant ClientUsingGoogleGuice as CUGG
+
+CUGG -> Guice: Hey Guice, Create an Injector
+activate Guice
+Guice -> CUGG: here you go: An Injector instance
+deactivate Guice
+
+CUGG -> Injector: hey Injector, get me an Application instance
+activate Injector
+Injector -> Application: hey Application, give me an instance
+activate Application
+Application -> Injector: hey injector, I need a Computer
+Injector -> Application: here you go, Computer of Type PC
+note left: Computer is mapped to PC
+Application -> Injector: here you go, an Application instance
+deactivate Application
+Injector -> CUGG: here you go: An Application instance
+deactivate Injector
+CUGG -> Application: hey app run the application: run()
+Application -> "PC Computer": hey computer, start()
+@enduml
