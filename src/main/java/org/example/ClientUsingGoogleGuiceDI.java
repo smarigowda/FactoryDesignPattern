@@ -9,7 +9,7 @@ import org.example.di.AppInjector;
  * Hello DI!
  *
  */
-public class Client
+public class ClientUsingGoogleGuiceDI
 {
     public static void main( String[] args ) throws Exception {
         Injector injector = Guice.createInjector(new AppInjector());
