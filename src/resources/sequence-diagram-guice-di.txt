@@ -11,8 +11,7 @@ CUGG -> Injector: hey Injector, get me an Application instance
 activate Injector
 Injector -> Application: hey Application, give me an instance
 activate Application
-Application -> Injector: hey injector, I need a Computer
-Injector -> Application: here you go, Computer of Type PC
+Injector -> Application: here is a Computer of Type PC you need
 note left: Computer is mapped to PC
 Application -> Injector: here you go, an Application instance
 deactivate Application
