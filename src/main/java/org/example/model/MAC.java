@@ -1,12 +1,15 @@
 package org.example.model;
 
-import org.example.enums.ComputerTypes;
+import com.google.inject.Inject;
+import com.google.inject.Singleton;
 
+@Singleton
 public class MAC extends Computer {
     String ram;
     String hdd;
     String cpu;
 
+    @Inject
     public MAC(String ram, String hdd, String cpu) {
         this.ram = ram;
         this.hdd = hdd;

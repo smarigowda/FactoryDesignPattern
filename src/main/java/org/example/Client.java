@@ -1,6 +1,9 @@
 package org.example;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import org.example.app.Application;
+import org.example.di.AppInjector;
 
 /**
  * Hello Factory!
@@ -9,7 +12,8 @@ import org.example.app.Application;
 public class Client
 {
     public static void main( String[] args ) throws Exception {
-        Application app = new Application();
+        Injector injector = Guice.createInjector(new AppInjector());
+        Application app = injector.getInstance(Application.class);
         app.run();
     }
 }
