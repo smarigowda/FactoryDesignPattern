@@ -5,7 +5,7 @@ import com.google.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
-public class PC extends Computer {
+public class PC implements Computer {
     String ram;
     String hdd;
     String cpu;

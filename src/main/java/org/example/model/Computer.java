@@ -1,8 +1,8 @@
 package org.example.model;
 
-public abstract class Computer {
-    public abstract String getRAM();
-    public abstract String getCPU();
-    public abstract String getHDD();
-    public abstract void start();
+public interface Computer {
+    String getRAM();
+    String getCPU();
+    String getHDD();
+    void start();
 }

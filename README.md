@@ -1,2 +1,2 @@
-# FactoryDesignPattern
-Demo of Factory Design Pattern in Java
+# Factory and Guice DI
+Demo of Factory Design Pattern and Guice DI

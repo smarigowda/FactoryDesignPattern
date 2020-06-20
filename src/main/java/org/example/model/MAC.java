@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import com.google.inject.Singleton;
 
 @Singleton
-public class MAC extends Computer {
+public class MAC implements Computer {
     String ram;
     String hdd;
     String cpu;
