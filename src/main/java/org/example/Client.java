@@ -6,7 +6,7 @@ import org.example.app.Application;
 import org.example.di.AppInjector;
 
 /**
- * Hello Factory!
+ * Hello DI!
  *
  */
 public class Client
