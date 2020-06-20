@@ -1,0 +1,17 @@
+@startuml
+
+participant "ClientUsingFactory" as CUF
+participant "ComputerFactory" as CF
+
+CUF -> CF: getComputer of type PC
+activate CF
+CUF <- CF: return Computer of type PC
+deactivate CF
+CUF -> PC: start()
+
+CUF -> CF: getComputer of type MAC
+activate CF
+CUF <- CF: return Computer of type MAC)
+deactivate CF
+CUF -> MAC: start()
+@enduml
