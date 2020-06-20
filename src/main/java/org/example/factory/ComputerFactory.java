@@ -8,9 +8,9 @@ import org.example.model.PC;
 public class ComputerFactory {
     public static Computer getComputer(ComputerTypes type) throws Exception {
         if(type.equals(ComputerTypes.PC)) {
-            return new PC("10GB", "120GB", "3GH");
+            return new PC();
         } else if(type.equals(ComputerTypes.MAC)) {
-            return new MAC("16Gb", "250GB", "5GH");
+            return new MAC();
         }
         throw new Exception("Unknown type of Computer");
     }

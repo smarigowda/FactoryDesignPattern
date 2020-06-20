@@ -11,10 +11,10 @@ public class PC extends Computer {
     String cpu;
 
     @Inject
-    public PC(String ram, String hdd, String cpu) {
-        this.ram = ram;
-        this.hdd = hdd;
-        this.cpu = cpu;
+    public PC() {
+        this.ram = PCConfig.ram;
+        this.hdd = PCConfig.hdd;
+        this.cpu = PCConfig.cpu;
     }
 
     @Override

@@ -8,7 +8,7 @@ import org.example.model.PC;
 public class AppInjector extends AbstractModule {
     @Override
     protected void configure() {
-//        bind(Computer.class).to(MAC.class);
-        bind(Computer.class).to(PC.class);
+        bind(Computer.class).to(MAC.class);
+        // bind(Computer.class).to(PC.class);
     }
 }

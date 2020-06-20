@@ -3,15 +3,15 @@
 participant "ClientUsingFactory" as CUF
 participant "ComputerFactory" as CF
 
-CUF -> CF: getComputer of type PC
+CUF -> CF: hey factory, get me a Computer of type PC
 activate CF
-CUF <- CF: return Computer of type PC
+CUF <- CF: here you go, Computer of type PC
 deactivate CF
-CUF -> PC: start()
+CUF -> PC: hey Computer, start()
 
-CUF -> CF: getComputer of type MAC
+CUF -> CF: hey factory, get me a Computer of type MAC
 activate CF
-CUF <- CF: return Computer of type MAC)
+CUF <- CF: here you go, Computer of type MAC
 deactivate CF
-CUF -> MAC: start()
+CUF -> MAC: hey Computer, start()
 @enduml

@@ -16,15 +16,10 @@ public class Application {
         this.computer = comp;
     }
     public void run() throws Exception {
-//        System.out.println( "Factory Design Pattern");
-//        Computer computer;
-//        computer = ComputerFactory.getComputer(ComputerTypes.PC);
-        // computer = ComputerFactory.getComputer(ComputerTypes.MAC);
-
-        // assertThat(computer instanceof PC, is(true));
-        // assertThat(computer instanceof MAC, is(true));
-
-        computer.start();
+        this.computer.start();
+        System.out.println("RAM = " + this.computer.getRAM());
+        System.out.println("HDD = " + this.computer.getHDD());
+        System.out.println("CPU = " + this.computer.getCPU());
     }
 }
 

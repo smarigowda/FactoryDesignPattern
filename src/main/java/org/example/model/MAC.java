@@ -10,10 +10,10 @@ public class MAC extends Computer {
     String cpu;
 
     @Inject
-    public MAC(String ram, String hdd, String cpu) {
-        this.ram = ram;
-        this.hdd = hdd;
-        this.cpu = cpu;
+    public MAC() {
+        this.ram = MACConfig.ram;
+        this.hdd = MACConfig.hdd;
+        this.cpu = MACConfig.cpu;
     }
 
     @Override
